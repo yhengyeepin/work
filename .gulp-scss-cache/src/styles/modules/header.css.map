@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAGA,OAAQ;EACN,MAAM,ECHQ,YAAY;EDI1B,UAAU,EELI,OAAO;;AFQvB,WAAY;EACV,WAAW,ECTW,YAAY;EDUlC,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;;AAGd,KAAM;EACJ,OAAO,EAAE,YAAY;EACrB,cAAc,EAAE,MAAM;;AAGxB,QAAS;EACP,OAAO,EAAE,YAAY;EACrB,WAAW,ECpBG,YAAY;;ADuB5B,KAAM;EACJ,KAAK,EAAE,KAAK;EACZ,YAAY,EC1BU,YAAY;ED2BlC,MAAM,EAAE,IAAI;;AAGd,UAAW;EACT,OAAO,EAAE,YAAY;EACrB,WAAW,EC/BG,YAAY;EDgC1B,YAAY,EAAE,KAAK",
-"sources": ["../../../../src/styles/modules/header.scss","../../../../src/styles/modules/app-variables.scss","../../../../src/styles/modules/color-variables.scss"],
-"names": [],
-"file": "header.css"
-}
