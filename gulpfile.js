@@ -31,7 +31,7 @@ gulp.task('templates', function(){
       .pipe(rename(function(path) {
         path.extname = '.html'
       }))
-      .pipe(gulp.dest('./'));
+      .pipe(gulp.dest('./dist'));
 });
 
 gulp.task('images', function(){

@@ -1,0 +1,4 @@
+applications:
+- name: fedtestsample
+  memory: 128M
+  command: node app.js
