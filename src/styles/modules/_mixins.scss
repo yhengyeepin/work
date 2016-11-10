@@ -1,0 +1,47 @@
+@mixin mq($breakpoint: $small) {
+  @if $breakpoint == $small {
+    @media (min-width: $small) {
+      @content;
+    }
+  }
+  @else if $breakpoint == $sm-medium {
+    @media (min-width: $small) and (max-width: $sm-medium) {
+      @content;
+    }
+  }
+  @else {
+    @media (min-width: $medium) {
+      @content;
+    }
+  }
+}
+
+@mixin padding() {
+  padding: 0 $padding-space 0 $padding-space;
+}
+
+@mixin margin($margin:$margin-space) {
+  margin: $margin 0 $margin 0;
+}
+
+
+@mixin makebutton($color: $blue-color) {
+  background-color: $color;
+  border: none;
+  color: #FFF;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  height: 60px;
+  cursor: pointer;
+
+  &:hover {
+      background-color: lighten($color, 5%);
+  }
+
+  &:active {
+      background-color: darken($color, 5%);
+  }
+}

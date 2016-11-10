@@ -1,0 +1,53 @@
+@import "variables";
+@import "color-variables";
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+img,
+object {
+  max-width: 100%;
+}
+
+body {
+  font-family: $std-font;
+  margin: 0;
+  padding: 0;
+  color: $primary-color;
+}
+
+@mixin std-heading {
+	font-family: $std-font;
+	color: $primary-color;
+}
+
+h1 {
+	@include std-heading;
+	//font-size: pxtoem(54px);
+}
+
+p {
+	@include std-heading;
+}
+
+div.row {
+	padding: 0 $margin-space 0 $margin-space;
+}
+
+div.row-odd {
+	@extend div.row;
+	background: $bg-color;
+}
+
+div.row-even {
+	@extend div.row;
+	background: $secondary-color;
+}
+
+
+

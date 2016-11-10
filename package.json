@@ -10,9 +10,19 @@
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.14.0",
+    "browserify": "^13.1.0",
     "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.12",
+    "gulp-compile-handlebars": "^0.6.1",
     "gulp-imagemin": "^3.0.3",
+    "gulp-less": "^3.1.0",
+    "gulp-rename": "^1.2.2",
     "gulp-sourcemaps": "^1.6.0",
-    "gulp-uglify": "^2.0.0"
+    "gulp-uglify": "^2.0.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "dependencies": {
+    "normalize.css": "^4.2.0"
   }
 }

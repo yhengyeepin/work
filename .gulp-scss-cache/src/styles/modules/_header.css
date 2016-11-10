@@ -1,0 +1,46 @@
+header {
+  background-color: #3D4852;
+  color: #FFF;
+  display: flex;
+  flex-flow: column wrap; }
+
+.logo-group {
+  margin-left: pxtoem(40px);
+  float: left;
+  height: 100%;
+  width: 300px; }
+
+.logo {
+  display: inline-block;
+  vertical-align: middle;
+  width: 43px; }
+
+.company {
+  display: inline-block;
+  line-height: pxtoem(50px); }
+
+.menu {
+  float: right;
+  height: 100%;
+  width: 100%;
+  background: #3D4852; }
+
+.menu-item {
+  display: inline-block;
+  line-height: pxtoem(50px);
+  padding-left: 2.5em; }
+
+.searchbar {
+  display: inline-block;
+  padding-left: 2.5em; }
+
+.search-button {
+  background-image: url(../img/icon-search-white.svg);
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  background-color: transparent;
+  width: 24px;
+  height: 24px;
+  border: none; }
+
+/*# sourceMappingURL=_header.css.map */

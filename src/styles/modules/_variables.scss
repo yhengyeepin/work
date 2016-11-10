@@ -1,0 +1,19 @@
+$header-height: pxtoem(50px);
+$footer-height: pxtoem(150px);
+$standard-space: pxtoem(40px);
+$margin-space: 40px;
+$padding-space: $margin-space;
+$mobile-margin-space: 10px;
+
+$base-font-size: 16px;
+$std-font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+//media query values
+$small: 34.375em; //550px
+$sm-medium: 53.063em; //849px
+$medium: 53.125em; //850px
+
+@function pxtoem($px, $base: $base-font-size) {
+	@return ($px/$base) * 1em;
+}
+

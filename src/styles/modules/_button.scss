@@ -1,0 +1,27 @@
+@import "color-variables";
+@import "mixins";
+
+.button {
+    @include makebutton;
+}
+
+.button-green {
+    @include makebutton($green-color);
+}
+
+.button-orange {
+    @include makebutton($orange-color);
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: $orange-color;
+    border: none;
+    color: white;
+    padding: 0;
+    text-decoration: none;
+    margin: 0;
+    cursor: pointer;
+    &:hover {
+        background-color: lighten($orange-color, 20%);
+    }
+}

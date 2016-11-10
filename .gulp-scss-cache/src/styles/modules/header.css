@@ -1,0 +1,28 @@
+.header {
+  height: pxtoem(50px);
+  background: #3D4852; }
+
+.logo-group {
+  margin-left: pxtoem(40px);
+  float: left;
+  height: 100%; }
+
+.logo {
+  display: inline-block;
+  vertical-align: middle; }
+
+.company {
+  display: inline-block;
+  line-height: pxtoem(50px); }
+
+.menu {
+  float: right;
+  margin-right: pxtoem(40px);
+  height: 100%; }
+
+.menu-item {
+  display: inline-block;
+  line-height: pxtoem(50px);
+  padding-left: 2.5em; }
+
+/*# sourceMappingURL=header.css.map */

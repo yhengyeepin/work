@@ -1,0 +1,26 @@
+@import "variables";
+@import "color-variables";
+
+footer {
+	height: $footer-height;
+	color: $secondary-color;
+	background-color: $primary-color;
+	display: flex;
+  	flex-flow: row wrap;
+  	justify-content: space-between;
+		p {
+			color: $gray-color;
+    		//line-height: $footer-height;
+    		//margin: 0 $standard-space 0 0;
+    		margin: -50px 40px;
+		}
+
+		.company {
+		  display: inline-block;
+		  line-height: $footer-height;
+		}
+
+		.logo-group {
+			margin-top: -40px;
+		}
+}

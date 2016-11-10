@@ -1,0 +1,11 @@
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+img,
+object {
+  max-width: 100%; }
+
+/*# sourceMappingURL=base.css.map */

@@ -1,0 +1,295 @@
+@import url(../../node_modules/normalize.css/normalize.css);
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+img,
+object {
+  max-width: 100%; }
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #3D4852; }
+
+h1 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #3D4852; }
+
+p {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #3D4852; }
+
+div.row, div.row-odd, div.row-even {
+  padding: 0 40px 0 40px; }
+
+div.row-odd {
+  background: #F0F2F3; }
+
+div.row-even {
+  background: #FFF; }
+
+header {
+  background-color: #3D4852;
+  color: #FFF;
+  display: flex;
+  flex-flow: column wrap; }
+
+.logo-group {
+  margin-left: 2.5em;
+  float: left;
+  height: 100%;
+  width: 300px; }
+
+.logo {
+  display: inline-block;
+  vertical-align: middle;
+  width: 43px; }
+
+.company {
+  display: inline-block;
+  line-height: 3.125em; }
+
+.menu {
+  float: right;
+  height: 100%;
+  width: 100%;
+  background: #3D4852; }
+
+.menu-item {
+  display: inline-block;
+  line-height: 3.125em;
+  padding-left: 2.5em; }
+
+.searchbar {
+  display: inline-block;
+  padding-left: 2.5em; }
+
+.search-button {
+  background-image: url(../img/icon-search-white.svg);
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  background-color: transparent;
+  width: 24px;
+  height: 24px;
+  border: none; }
+
+.banner {
+  background: url(../img/background.png) no-repeat;
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  background-size: cover;
+  margin-top: -5px; }
+
+.cars {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around; }
+  .cars .button {
+    background-color: #4FC4E6;
+    height: 44px; }
+  .cars p {
+    line-height: 40px; }
+
+.car-pic {
+  padding: 40px 0px 40px 0px;
+  display: inline-block; }
+
+#slogan {
+  font-size: 24px;
+  width: 265px;
+  margin: 20px 0 0 40px;
+  line-height: 40px; }
+
+#get-started {
+  margin: 40px 0 40px 40px; }
+
+#searchform {
+  background: #FFF;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: wrap; }
+  #searchform .button-orange {
+    min-width: 280px;
+    height: 45px;
+    margin: 10px 0 10px 0; }
+  #searchform select {
+    margin: 10px 0 10px 0; }
+
+footer {
+  height: 9.375em;
+  color: #FFF;
+  background-color: #3D4852;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between; }
+  footer p {
+    color: #6D7780;
+    margin: -50px 40px; }
+  footer .company {
+    display: inline-block;
+    line-height: 9.375em; }
+  footer .logo-group {
+    margin-top: -40px; }
+
+.button {
+  background-color: #4FC4E6;
+  border: none;
+  color: #FFF;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  height: 60px;
+  cursor: pointer; }
+  .button:hover {
+    background-color: #65cbe9; }
+  .button:active {
+    background-color: #39bde3; }
+
+.button-green {
+  background-color: #28C278;
+  border: none;
+  color: #FFF;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  height: 60px;
+  cursor: pointer; }
+  .button-green:hover {
+    background-color: #2fd485; }
+  .button-green:active {
+    background-color: #24ad6b; }
+
+.button-orange {
+  background-color: #F07E5E;
+  border: none;
+  color: #FFF;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  height: 60px;
+  cursor: pointer; }
+  .button-orange:hover {
+    background-color: #f29175; }
+  .button-orange:active {
+    background-color: #ee6b47; }
+
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #F07E5E;
+  border: none;
+  color: white;
+  padding: 0;
+  text-decoration: none;
+  margin: 0;
+  cursor: pointer; }
+  input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover {
+    background-color: #f9c9bb; }
+
+select {
+  min-width: 100px;
+  height: 45px;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -webkit-padding-end: 20px;
+  -moz-padding-end: 20px;
+  -webkit-padding-start: 2px;
+  -moz-padding-start: 2px;
+  background-image: url(../img/select-arrow.png);
+  background-position: 95% 50%;
+  background-repeat: no-repeat;
+  border: 1px solid #9AA0A5;
+  border-radius: 0;
+  box-shadow: none;
+  color: #9AA0A5;
+  font-size: inherit;
+  overflow: hidden;
+  padding: 2px 20px 2px 20px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: inline-block; }
+  select:hover {
+    border: 1px solid #5a6065;
+    color: #5a6065;
+    background-image: url(../img/select-arrow-hover.png); }
+
+/* Small devices (tablets, 551px-849px) */
+@media (min-width: 53.125em) {
+  header {
+    display: inline-block;
+    width: 100%; }
+
+  footer p {
+    line-height: 9.375em;
+    margin: 0 2.5em 0 0; }
+  footer .logo-group {
+    margin-top: 0px; }
+
+  .menu {
+    height: 100%;
+    background: #3D4852;
+    margin-right: 2.5em;
+    float: right;
+    width: auto; }
+
+  .col-text-left {
+    width: 50%;
+    padding-right: 2.5em; }
+
+  .col-text-right {
+    width: 50%;
+    padding-left: 40px; }
+
+  .col-pic-left {
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+    padding-right: 2.5em; }
+
+  .col-pic-right {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 2.5em; }
+
+  .cars {
+    height: 360px;
+    padding: 0 210px !important; }
+
+  .car-pic {
+    padding: 40px 20px 40px 0px;
+    display: inline-block;
+    width: auto; }
+    .car-pic:last-of-type {
+      padding-right: 0px; }
+
+  #slogan {
+    font-size: 54px;
+    width: 615px;
+    margin: 140px 0 0 210px;
+    line-height: 60px; }
+
+  #get-started {
+    margin: 40px 0 140px 210px; }
+
+  #searchform {
+    justify-content: space-between;
+    padding: 30px 210px 30px 210px; }
+    #searchform .button-orange {
+      margin: 30px 0 30px 0; }
+    #searchform select {
+      min-width: 280px;
+      margin: 30px 0 30px 0; } }
+
+/*# sourceMappingURL=main.css.map */

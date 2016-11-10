@@ -1,0 +1,12 @@
+@import "variables";
+@import "color-variables";
+@import "mixins";
+
+@include mq($small) { 
+
+}
+
+/* Small devices (tablets, 551px-849px) */
+@include mq($sm-medium) { 
+  $margin-space: 100px;
+}

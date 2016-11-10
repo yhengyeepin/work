@@ -1,0 +1,69 @@
+@import "variables";
+@import "color-variables";
+@import "mixins";
+
+.container {
+
+}
+
+.banner {
+	background: url(../img/background.png) no-repeat;
+	height: 100%;
+    width: 100%;
+    display: inline-block;
+    background-size: cover;
+    margin-top: -5px;
+}
+
+.cars {
+	//height: 360px;
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-around;
+
+	.button {
+		background-color: $blue-color;
+		height: 44px;
+	}
+
+	p {
+		line-height: 40px;
+	}
+}
+
+.car-pic {
+	padding: 40px 0px 40px 0px;
+	display: inline-block;
+	//width: 160px;
+}
+
+#slogan {
+	font-size: 24px;
+    width: 265px;
+    margin: 20px 0 0 $margin-space;
+    line-height: 40px;
+}
+
+#get-started {
+	margin: $margin-space 0 $margin-space $margin-space;
+}
+
+#searchform {
+	//padding: 0px 210px 0px 210px;
+	background: #FFF;
+	display: flex;
+	justify-content: space-around;
+	flex-flow: wrap;
+	.button-orange {
+		min-width: 280px;
+		height: 45px;
+		@include margin(10px);
+	}
+
+	select {
+		@include margin(10px);
+	}
+}
+
+
+

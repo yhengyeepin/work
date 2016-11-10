@@ -1,0 +1,55 @@
+@import "variables";
+@import "color-variables";
+
+header {
+  background-color: $primary-color;
+  color: $secondary-color;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.logo-group {
+  margin-left: $standard-space;
+  float: left;
+  height: 100%;
+  width: 300px;
+}
+
+.logo {
+  display: inline-block;
+  vertical-align: middle;
+  width: 43px;
+}
+
+.company {
+  display: inline-block;
+  line-height: $header-height;
+}
+
+.menu {
+  float: right;
+  height: 100%;
+  width: 100%;
+  background: $primary-color;
+}
+
+.menu-item {
+  display: inline-block;
+  line-height: $header-height;
+  padding-left: 2.5em;
+}
+
+.searchbar {
+  display: inline-block;
+  padding-left: 2.5em;
+}
+
+.search-button{
+  background-image: url(../img/icon-search-white.svg);
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  background-color: transparent;
+  width: 24px;
+  height: 24px;
+  border: none;
+}
