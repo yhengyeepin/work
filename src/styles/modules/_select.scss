@@ -3,8 +3,8 @@
 select {
     min-width: 100px;
     height: 45px;
-    -webkit-appearance: button;
-    -moz-appearance: button;
+    -webkit-appearance: none;
+    -moz-appearance: none;
     -webkit-user-select: none;
     -moz-user-select: none;
     -webkit-padding-end: 20px;
@@ -25,7 +25,7 @@ select {
     white-space: nowrap;
     display: inline-block;
     
-    &:hover{
+    &:hover {
         border: 1px solid darken($lg-gray-color, 25%);
         color: darken($lg-gray-color, 25%);
         background-image: url(../img/select-arrow-hover.png);

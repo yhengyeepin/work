@@ -1,16 +1,28 @@
+
+//$small: 320px;
+//$sm-medium: 550px;
+//$medium: 980px;
+//$medium-large: 1024px;
+//$large: 1440x;
+
 @mixin mq($breakpoint: $small) {
   @if $breakpoint == $small {
-    @media (min-width: $small) {
-      @content;
-    }
-  }
-  @else if $breakpoint == $sm-medium {
     @media (min-width: $small) and (max-width: $sm-medium) {
       @content;
     }
   }
+  @else if $breakpoint == $medium {
+    @media (min-width: $sm-medium) and (max-width: $medium-large) {
+      @content;
+    }
+  }
+  @else if $breakpoint == $medium-large {
+    @media (min-width: $medium-large) {
+      @content;
+    }
+  }
   @else {
-    @media (min-width: $medium) {
+    @media (min-width: $large) {
       @content;
     }
   }
@@ -29,11 +41,11 @@
   background-color: $color;
   border: none;
   color: #FFF;
-  padding: 15px 32px;
+  padding: 13px 32px 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  margin: 4px 2px;
+  margin: 0;
   height: 60px;
   cursor: pointer;
 

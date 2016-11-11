@@ -2,7 +2,8 @@
 @import "color-variables";
 @import "mixins";
 
-@include mq($medium){
+//$medium-large: 1024px;
+@include mq($medium-large){
 
 	$header-height: pxtoem(520px);
 	$footer-height: pxtoem(150px);
@@ -33,14 +34,6 @@
 	  	width: auto;
 	}
 
-	.menu-item {
-
-	}
-
-	.container {
-
-	}
-
 	.col-text-left {
 		width: 50%;
 		padding-right: $standard-space;
@@ -48,7 +41,7 @@
 
 	.col-text-right {
 		width: 50%;
-		padding-left: 40px;
+		padding-left: $standard-space;
 	}
 
 	.col-pic-left {
@@ -67,7 +60,7 @@
 
 	.cars {
 		height: 360px;
-		padding: 0 210px !important;
+		padding: 0 $margin-space;
 	}
 
 	.car-pic {
@@ -87,7 +80,7 @@
 	}
 
 	#get-started {
-		margin: 40px 0 140px $margin-space;
+		margin: $standard-space 0 140px $margin-space;
 	}
 
 	#searchform {

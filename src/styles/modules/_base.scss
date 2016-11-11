@@ -36,7 +36,8 @@ p {
 }
 
 div.row {
-	padding: 0 $margin-space 0 $margin-space;
+//	padding: 0 $margin-space 0 $margin-space;
+	padding-bottom: 40px;
 }
 
 div.row-odd {

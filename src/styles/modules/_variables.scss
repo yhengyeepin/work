@@ -9,9 +9,11 @@ $base-font-size: 16px;
 $std-font: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 //media query values
-$small: 34.375em; //550px
-$sm-medium: 53.063em; //849px
-$medium: 53.125em; //850px
+$small: 320px;
+$sm-medium: 768px;
+$medium: 980px;
+$medium-large: 1024px;
+$large: 1440x;
 
 @function pxtoem($px, $base: $base-font-size) {
 	@return ($px/$base) * 1em;
