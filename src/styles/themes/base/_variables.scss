@@ -1,12 +1,14 @@
 $header-height: pxtoem(50px);
-$footer-height: pxtoem(150px);
+$footer-height: 50px;//pxtoem(150px);
 $standard-space: pxtoem(40px);
 $margin-space: 40px;
 $padding-space: $margin-space;
 $mobile-margin-space: 10px;
 
 $base-font-size: 16px;
-$std-font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$h1-size: 54px;
+$h2-size: 30px;
+$standard-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 //media query values
 $small: 320px;

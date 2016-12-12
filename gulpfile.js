@@ -11,7 +11,7 @@ var scss = require('gulp-scss');
 
 gulp.task('default', ['styles', 'images', 'scripts', 'templates'],function(){
   browserSync.init({
-    server: './',
+    server: './dist',
     browser: ['google chrome']
   });
   gulp.watch('src/styles/**/*.scss', ['styles']);
@@ -52,7 +52,7 @@ gulp.task('scripts', function(){
 
 gulp.task('styles', function() {
   //gulp.src(['src/styles/**/*.less'])
-  gulp.src(['src/styles/**/*.scss'])
+  gulp.src(['src/styles/main.scss'])
     .pipe(sourceMaps.init())
     //.pipe(less())
     .pipe(scss())

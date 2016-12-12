@@ -1,24 +1,76 @@
-@import "variables";
-@import "color-variables";
-
 header {
-  background-color: $primary-color;
-  color: $secondary-color;
+  background-color: $color-primary;
+  color: $color-secondary;
   display: flex;
   flex-flow: column wrap;
-}
+  position: fixed;
+  padding: 0 40px;
+  height: 50px;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
 
-.logo-group {
-  margin-left: $standard-space;
-  float: left;
-  height: 100%;
-  width: 300px;
+  @include make-link-opacity($color-secondary);
+
+  .top-nav {
+    float: right;
+    padding-top: 13px;
+    font-weight: bold;
+    ul {
+      list-style: none;
+      li {
+        float: left;
+        margin-right: 2.5em;
+      }
+    }
+
+    @include make-link($color-secondary, $color-orange);
+  }
+
+  @include media-query(phone tablet){
+    .top-nav-active {
+      transform: translateX(0);
+    }
+
+    .top-nav {
+      transition: all 0.5s ease;
+      //display: none;
+      transform: translateX(100%);
+      float: right;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      font-weight: bold;
+      background: $color-gray-dark;
+      position: absolute;
+      right: 0;
+      //z-index: -1;
+      ul {
+        list-style: none;
+        li {
+          float:none;
+          padding: 0px 20px 15px 30px;
+          margin: 0;
+        }
+      }
+      @include make-link($color-secondary, $color-orange);
+    }
+	}
+
 }
 
 .logo {
   display: inline-block;
   vertical-align: middle;
   width: 43px;
+  height: 30px;
+  background-image: url(../img/logo-autosales.svg);
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  padding-left: 50px;
+  margin-top: 10px;
+  line-height: 30px;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .company {
@@ -30,7 +82,7 @@ header {
   float: right;
   height: 100%;
   width: 100%;
-  background: $primary-color;
+  background: $color-primary;
 }
 
 .menu-item {
@@ -39,17 +91,28 @@ header {
   padding-left: 2.5em;
 }
 
-.searchbar {
-  display: inline-block;
-  padding-left: 2.5em;
-}
-
 .search-button{
-  background-image: url(../img/icon-search-white.svg);
-  background-repeat: no-repeat;
-  background-position: 0px 0px;
+  background: url(../img/icon-search-white.svg) no-repeat;
+  background-position: 0 0;
   background-color: transparent;
   width: 24px;
   height: 24px;
   border: none;
+  float: right;
+  margin: 14px 40px 0 0;
+}
+
+.nav-small {
+  transition: all 0.5s ease;
+  background: url(../img/hamburger.png) no-repeat;
+  border: none;
+  width: 24px;
+  height: 24px;
+  float: right;
+  background-color: transparent;
+  //margin: 14px 20px 0 0;
+  right: 40px;
+  top: 12px;
+  position: fixed;
+  z-index: 100;
 }

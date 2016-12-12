@@ -1,0 +1,16 @@
+@include media-query(tablet){
+  footer {
+    .copyright {
+      font-size: $font-size-small;
+      padding-top: 15px;
+    }
+  }
+
+  .showcase__img {
+    height: 320px;
+  }
+
+  .banner {
+    height: 500px;
+  }
+}

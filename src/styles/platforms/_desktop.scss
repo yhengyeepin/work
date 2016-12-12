@@ -1,0 +1,32 @@
+//$medium-large: 1024px;
+@include media-query(desktop){
+	.showcase__img {
+    height: 220px;
+  }
+
+	.main-heading {
+		line-height: 1.2;
+		margin-bottom: 40px;
+		font-size: 40px;
+	}
+
+	.banner {
+		height: 500px;
+	}
+
+	.get-started {
+		font-size: 20px;
+	}
+
+	.hero {
+		padding-left: 0px;
+	}
+
+	.nav-small {
+		display: none;
+	}
+
+	.search-button {
+    margin: 14px 20px 0 0;
+	}
+}

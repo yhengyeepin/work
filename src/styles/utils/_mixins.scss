@@ -1,0 +1,98 @@
+@mixin standard-font {
+  font-family: $standard-font;
+  color: $color-primary;
+}
+
+@mixin make-link($original-color: $color-secondary, $hover-color:$color-orange) {
+    a {
+      color: $original-color;
+      text-decoration: none;
+      &:hover {
+          color: $hover-color;
+          opacity: 1.0;
+          transition: color 0.3s ease-in-out;
+      }
+    }
+}
+
+@mixin make-link-opacity($original-color: $color-secondary, $opacity: 0.5) {
+    a {
+      color: $original-color;
+      text-decoration: none;
+      &:hover {
+          opacity: $opacity;
+          transition: opacity 0.3s ease-in-out;
+      }
+    }
+}
+
+//better mixin for media query
+@mixin media-query($devices) {
+
+  @each $device in $devices {
+
+    @if $device == phone {
+      @media (min-width: $small) and (max-width: $sm-medium) {
+        @content;
+      }
+    }
+    @else if $device == large-phone {
+      @media (min-width: $small) and (max-width: $sm-medium) {
+        @content;
+      }
+    }
+    @else if $device == small-tablet {
+      @media (min-width: $sm-medium) and (max-width: $medium-large) {
+        @content;
+      }
+    }
+    @else if $device == tablet {
+      @media (min-width: $sm-medium) and (max-width: $medium-large) {
+        @content;
+      }
+    }
+    @else if $device == desktop {
+      @media (min-width: $medium-large) {
+        @content;
+      }
+    }
+    @else if $device == large-desktop {
+      @media (min-width: $large) {
+        @content;
+      }
+    }
+  }
+}
+
+
+@mixin padding() {
+  padding: 0 $padding-space 0 $padding-space;
+}
+
+@mixin marginTopBottom($margin:$margin-space) {
+  margin: $margin auto;
+}
+
+
+@mixin makebutton($color: $color-blue, $font: $button-font-size) {
+  background-color: $color;
+  border: none;
+  color: #FFF;
+  padding: 13px 32px 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0;
+  font-weight: bold;
+  //height: 60px;
+  cursor: pointer;
+  font-size: $font;
+
+  &:hover {
+      background-color: lighten($color, 5%);
+  }
+
+  &:active {
+      background-color: darken($color, 5%);
+  }
+}
