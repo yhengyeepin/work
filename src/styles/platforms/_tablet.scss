@@ -1,4 +1,10 @@
 @include media-query(tablet){
+  .main-heading {
+    line-height: 1.2;
+    margin-bottom: 40px;
+    font-size: 40px;
+  }
+  
   footer {
     .copyright {
       font-size: $font-size-small;
