@@ -32,7 +32,7 @@
   @each $device in $devices {
 
     @if $device == phone {
-      @media (min-width: $small) and (max-width: $sm-medium) {
+      @media (min-width: $xs) and (max-width: $small) {
         @content;
       }
     }
@@ -42,7 +42,7 @@
       }
     }
     @else if $device == small-tablet {
-      @media (min-width: $sm-medium) and (max-width: $medium-large) {
+      @media (min-width: $small) and (max-width: $medium-large) {
         @content;
       }
     }

@@ -1,5 +1,17 @@
 //$medium-large: 1024px;
 @include media-query(desktop){
+	.box-structure-1 {
+		flex: 1 50%;
+	}
+
+	.box-structure-2 {
+		flex: 1 50%;
+	}
+	
+	.box-structure-1-2 {
+		flex: 1 50%;
+	}
+
 	.showcase__img {
     height: 220px;
   }

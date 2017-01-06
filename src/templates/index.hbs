@@ -7,11 +7,15 @@
     <link rel="stylesheet" href="styles/main.css">
   </head>
   <body>
-  {{> header}}
-  {{> banner}}
-  {{> car_filter}}
-  {{> showcases}}
-  {{> footer}}
+    {{> header}}
+
+      <div class="column">
+      {{> banner}}
+      {{> car_filter}}
+      {{> showcases}}
+
+      </div>
+      {{> footer}}
   <script src="scripts/main.js"></script>
   </body>
 </html>

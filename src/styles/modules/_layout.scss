@@ -1,0 +1,63 @@
+$gutter: 20px;
+
+.container {
+  //border: 1px solid black;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  height: 100%;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.container, .box, .flex{
+  box-sizing: border-box;
+}
+
+.box {
+  padding: $gutter/2;
+}
+
+.flex {
+  display: flex;
+}
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.column {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.box-full {
+  flex: 0 100%;
+}
+
+.box-half {
+  flex: 0 50%;
+}
+
+.fixed-grow {
+  flex-grow: 0 !important;
+}
+
+$column-count : 12;
+
+@for $i from 1 through $column-count {
+  .box-#{$i} {
+    flex: 1 percentage($i/$column-count);
+  }
+}

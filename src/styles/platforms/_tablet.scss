@@ -1,10 +1,24 @@
-@include media-query(tablet){
+@include media-query(tablet small-tablet){
+
+  .box-structure-1 {
+		flex: 1 100%;
+	}
+
+  .box-structure-2 {
+    flex: 1 100%;
+    order: 2;
+  }
+
+  .box-structure-1-2 {
+		flex: 1 50%;
+	}
+
   .main-heading {
     line-height: 1.2;
     margin-bottom: 40px;
     font-size: 40px;
   }
-  
+
   footer {
     .copyright {
       font-size: $font-size-small;

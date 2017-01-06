@@ -1,0 +1,109 @@
+
+.main-heading {
+    line-height: 1.2;
+    margin-bottom: 40px;
+    font-size: 20px;
+    padding-top: 50px;
+}
+
+.showcase__img {
+    background: no-repeat center;
+    background-size: cover;
+    background-origin: content-box;
+
+    height: 320px;
+    &:hover .showcase__overlay {
+      opacity: 0.85;
+
+      .showcase__heading {
+        transform: translateY(50%);
+      }
+
+      .showcase__line {
+        opacity: 1;
+        width: 100%;
+      }
+
+      .showcase__more {
+        transform: translateY(80%);
+      }
+    }
+}
+
+.showcase__overlay {
+    text-align: center;
+    background: $color-primary;
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    //-webkit-transition: top 0.55s ease, opacity 0.55s ease;
+    //transition: top 0.55s ease, opacity 0.55s ease;
+    transition: opacity 0.5s ease-in-out;
+
+    .showcase__heading {
+      color: $color-white;
+      //-webkit-transition: all 0.8s cubic-bezier(0.42, 0, 0.49, 1.3);
+      transition: transform 0.8s cubic-bezier(0.42, 0, 0.49, 1.3);
+      transform: translateY(-100%);
+      padding-top: 10%;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+    }
+    .showcase__line {
+      padding-top: 10%;
+      border-bottom: 2px solid white;
+      transition: all 0.9s ease-in-out 0.3s;
+      width: -20%;
+      opacity: 0;
+    }
+    .showcase__more {
+      transform: translateY(300%);
+      transition: all 0.8s ease;
+      a {
+        color: $color-white;
+        text-decoration: none;
+        &:hover {
+          color: darken($color-white, 15%);
+        }
+      }
+    }
+}
+
+
+
+//show case picture end
+
+.section--showcase {
+  position: relative;
+  background: $color-gray-lightest;
+  &:nth-child(odd) {
+    background: $color-secondary;
+  }
+}
+
+.section--filter {
+  margin: 20px 0;
+}
+
+.banner {
+  background: url(../img/background.png) no-repeat;
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  background-position:center 15%;
+  margin-top: 50px;
+}
+
+.filter__select {
+    min-width : 220px;
+    width: 100%;
+}
+
+.button-orange {
+  width: 100%;
+  min-width: 220px //to prevent the label wrapped into second line
+}
+.get-started {
+  font-size: 14px
+}

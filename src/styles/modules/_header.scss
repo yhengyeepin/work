@@ -1,8 +1,6 @@
 header {
   background-color: $color-primary;
   color: $color-secondary;
-  display: flex;
-  flex-flow: column wrap;
   position: fixed;
   padding: 0 40px;
   height: 50px;
@@ -27,7 +25,7 @@ header {
     @include make-link($color-secondary, $color-orange);
   }
 
-  @include media-query(phone tablet){
+  @include media-query(phone small-tablet){
     .top-nav-active {
       transform: translateX(0);
     }
